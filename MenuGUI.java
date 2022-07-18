@@ -6,7 +6,7 @@ class MenuGUI extends MouseAdapter implements ActionListener {
     JFrame f;
     JMenuBar mb;
     JMenu menu;
-    JMenuItem select,copy,cut,paste,exit,nw,open,rename;
+    JMenuItem select,copy,cut,paste,exit,nw,open,rename,prop;
     JTextArea t1,t2;
     JPopupMenu pm; 
 
@@ -50,11 +50,12 @@ class MenuGUI extends MouseAdapter implements ActionListener {
         nw=new JMenuItem("New");
         open=new JMenuItem("Open");
         rename=new JMenuItem("Rename");
+        prop=new JMenuItem("Properties");
         pm.add(nw);
         pm.add(open);
         pm.add(rename);
         pm.addSeparator();
-        pm.add(exit);
+        pm.add(prop);
 
         f.setLayout(null);
         f.setVisible(true);
@@ -83,7 +84,7 @@ class MenuGUI extends MouseAdapter implements ActionListener {
         else if(e.getSource()==paste){
             t2.paste();
         }
-        else if(e.getSource()==cut){
+        else if(e.getSource()==cut){ 
             t1.cut();
         }
     }

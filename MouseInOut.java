@@ -6,10 +6,10 @@ class MouseInOut extends JFrame implements MouseListener,MouseMotionListener{
     public MouseInOut(){
         setSize(400,600);
         t1=new JTextField();
-        t1.setBounds(50,50,100,40);
+        t1.setBounds(120,50,100,40);
 
         t2=new JTextField();
-        t2.setBounds(50,180,100,40);
+        t2.setBounds(120,180,100,40);
         add(t1); add(t2);
 
         setLayout(null);
@@ -24,6 +24,7 @@ class MouseInOut extends JFrame implements MouseListener,MouseMotionListener{
     }
     public void mouseExited(MouseEvent e){
         t1.setText("Out");
+        t2.setText(" ");
     }
     public void mouseMoved(MouseEvent e){
         String loc="X:"+e.getX()+" Y:"+e.getY();

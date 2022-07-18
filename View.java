@@ -51,7 +51,7 @@ class Controller implements ActionListener{
             int sum=num1+num2;
             this.v.ans.setText(""+sum);
         }
-        if(e.getSource()==this.v.sub){
+        else{  //(e.getSource()==this.v.sub){
             int sub=num1-num2;
             this.v.ans.setText(""+sub);
         }
