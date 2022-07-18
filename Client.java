@@ -17,6 +17,7 @@ class Client{
             System.out.println("Square is "+ans);
             dis.close();
             dos.close();
+            scan.close();
             s.close();
         }catch(IOException e){
             System.out.println(e.getMessage());
