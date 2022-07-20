@@ -1,7 +1,7 @@
 import java.net.*;
 import java.io.*;
 import java.util.*;
-class ClientPalind{
+class PalindromeClient{
     public static void main(String[] args){
         try{
             Scanner scan =new Scanner(System.in);
